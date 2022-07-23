@@ -1,0 +1,570 @@
+ /* .body{
+    background-color: rgb(46, 40, 40);
+    height: 100%;
+   
+}
+ Split the screen in half 
+ .split {
+    height: 100%;
+    width: 50%;
+    
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+    
+
+  
+  
+  Control the left side 
+  .left {
+    
+    left: 0;
+    background-color: rgb(133, 108, 108);
+  }
+ 
+   Control the right side 
+  .right {
+    right: 0;
+    background-color:  rgb(52, 41, 41);
+  }
+
+ 
+ 
+  
+  .typewrite{
+    color: bisque;
+    padding-left: 1em;
+  }
+   If you want the content centered horizontally and vertically 
+  .centered {
+   padding-top: 20%;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+   Style the image inside the centered container, if needed 
+  .centered h3 {
+    width: 100px;
+    border-radius: 50%;
+  }
+
+h2{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+
+}
+p{
+    text-align: left ;
+    font-family: arial;
+    font-size: 30px;
+    line-height: 35pt;
+}
+ 
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+
+}
+.row, section{
+    width: 100%;
+    float: left;
+    clear: both;
+}
+.main-title .subtitle {
+    
+    padding: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--mc);
+    margin: 0 0 54px;
+}
+.main-title .title{
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 0 0 15px;
+    margin: 0 0 34px;
+    position: relative;
+}
+
+.main-title .desc{
+
+    letter-spacing: 0;
+    margin: 0 0 57px;
+}
+
+.container{
+    left: 25%;
+   position: absolute;
+   padding-top: 15%;
+
+}
+.container .box1{
+    padding-top: 1em;
+}
+.box1{
+    border: 1px solid rgba(255,255,255,.2);
+    height: 26em;
+   
+    padding-left: 15%;
+    width: 120%;
+    padding-right: 15%;
+    outline: 1px solid #a6988b;
+    transition: 0.5s;
+}
+.container .box2{
+    padding-top:0.5em;
+}
+
+.box2{
+    border: 1px solid rgba(255,255,255,.2);
+    padding-left: 10%;
+   
+    height:33em ;
+    outline: 1px solid #a6988b;
+    transition: 0.5s;
+}
+.box2:hover{
+    outline-offset: 10px;
+}
+.box1:hover{
+    outline-offset: 10px;
+}
+.box2-heading h3{
+    text-align: center;
+
+}
+
+.para h2{
+    text-align: center;
+    font-size: 30px;
+}
+.box2-image img{
+    height: 400px;
+}
+
+
+.body{
+    background-color: rgb(182, 127, 127);
+    height: 100%;
+}
+#home{
+    text-align: center;
+}
+.left-hand{
+    padding-top: 15%;
+}
+.right-hand{
+    padding-top: 15%;
+}
+
+
+body{
+    background-color: rgb(123, 95, 95);
+    height: 100%;
+}
+
+div.left-hand {
+    width: 50%;
+    height: 500px;
+    float: left;
+margin-top: 10%;
+    padding-left: 10px;
+    
+}
+
+
+div.right-hand{
+  
+   margin-top: 10% ;
+  padding-right:100px;
+ float:right;
+    
+    
+}
+.centered {
+width:40%;
+float: left;
+padding-left:100px ;
+    
+}
+
+.right-hand .container{
+   height: 500px;
+}
+.image{
+  size: 50px;
+}
+.p{
+ width:200em;
+ font-family: arial;
+    font-size: 30px;
+    line-height: 35pt;
+}
+.h2{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 80px;
+
+}
+
+*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding-top:10%;
+    height: 700px;/* Should be removed. Only for demonstration */
+    text-align:center;
+    
+  }
+  #roww{
+  padding-top:0%;
+  }
+  
+  .row{
+  padding-top: 4%;
+  background-color:rgb(151, 151, 165);
+  height: 700px;
+  }
+  
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: all 0.4s;
+      font-family: -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol";
+  }
+  
+  .container{
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+  
+  /* Navbar section */
+  
+  .nav{
+      width: 100%;
+      height: 65px;
+      position: fixed;
+      line-height: 65px;
+      text-align: center;
+      background-color: rgba(0,0,255,0.8);
+  }
+  
+  .nav div.logo{
+      width: 180px;
+      height: 10px;
+      position: absolute;
+  }
+  
+  .nav div.logo a{
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.8em;
+      text-transform: uppercase;
+  }
+  
+  .nav div.logo a:hover {
+      color: #c0c0c0;
+  }
+  
+  .nav div.main_list{
+      width: 600px;
+      height: 65px;
+      float: right;
+  }
+  
+  .nav div.main_list ul{
+      width:100%;
+      height: 65px;
+      display: flex;
+      list-style: none;
+  }
+  
+  .nav div.main_list ul li{
+      width: 120px;
+      height: 65px;
+  }
+  
+  .nav div.main_list ul li a{
+      text-decoration: none;
+      color: #fff;
+      line-height: 65px;
+      text-transform: uppercase;
+  }
+  
+  .nav div.main_list ul li a:hover{
+      color: #c0c0c0;
+  }
+  
+  .nav div.media_button {
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      position: absolute;
+      right: 15px;
+      top: 12px;
+      display: none;
+  }
+  
+  .nav div.media_button button.main_media_button {
+      width: 100%;
+      height: 100%;
+      background-color: transparent;;
+      outline: 0;
+      border: none;
+      cursor: pointer;
+  }
+  
+  .nav div.media_button button.main_media_button span{
+      width: 98%;
+      height: 1px;
+      display: block;
+      background-color: #fff;
+      margin-top: 9px;
+      margin-bottom: 10px;
+  }
+  
+  .nav div.media_button button.main_media_button:hover span:nth-of-type(1){
+      transform: rotateY(180deg);
+      transition: all 0.5s;
+      background-color: #c0c0c0;
+  }
+  
+  .nav div.media_button button.main_media_button:hover span:nth-of-type(2){
+      transform: rotateY(180deg);
+      transition: all 0.4s;
+      background-color: #c0c0c0;
+  }
+  
+  .nav div.media_button button.main_media_button:hover span:nth-of-type(3){
+      transform: rotateY(180deg);
+      transition: all 0.3s;
+      background-color: #c0c0c0;
+  }
+  
+  .nav div.media_button button.active span:nth-of-type(1) {
+      transform: rotate3d(0, 0, 1, 45deg);
+      position: absolute;
+      margin: 0;
+  }
+  
+  .nav div.media_button button.active span:nth-of-type(2) {
+      display: none;
+  }
+  
+  .nav div.media_button button.active span:nth-of-type(3) {
+      transform: rotate3d(0, 0, 1, -45deg);
+      position: absolute;
+      margin: 0;
+  }
+  
+  .nav div.media_button button.active:hover span:nth-of-type(1) {
+      transform: rotate3d(0, 0, 1, 20deg);
+  }
+  
+  .nav div.media_button button.active:hover span:nth-of-type(3) {
+      transform: rotate3d(0, 0, 1, -20deg);
+  }
+  
+  /* Home section */
+  
+  .home{
+      width: 100%;
+      height: 100vh;
+      background-color: #ddd;
+  }
+  
+  /* Medai qurey section */
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+      
+      .container{
+          margin: 0;
+      }
+      
+  }
+  
+  
+  
+  
+  @media screen and (max-width:768px) {
+      
+      .container{
+          margin: 0;
+      }
+      
+      .nav div.logo{
+          margin-left: 15px;
+      }
+      
+      .nav div.main_list{
+          width: 100%;
+          margin-top: 65px;
+          height: 0px;
+          overflow: hidden;
+      }
+      
+      .nav div.show_list{
+          height: 200px;
+      }
+      
+      .nav div.main_list ul{
+          flex-direction: column;
+          width: 100%;
+          height: 200px;
+          top: 80px;
+          right: 0;
+          left: 0;
+      }
+      
+      .nav div.main_list ul li{
+          width: 100%;
+          height: 40px;
+          background-color:rgba(0,0,255,0.8);
+      }
+      
+      .nav div.main_list ul li a{
+        text-align: center;
+          line-height: 40px;
+          width: 100%;
+          height: 40px;
+          display: table;
+      }
+      
+      .nav div.media_button{
+          display: block;
+      }
+  }
+  /* Clear floats after the columns */
+  
+  /*.roww{
+  padding-top:10px
+  }
+ 
+
+   .centered h3 {
+    width: 100px;
+    border-radius: 50%;
+  }
+
+.row.h2{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+
+}
+p{
+  
+    font-family: arial;
+    font-size: 30px;
+    line-height: 35pt;
+}
+*/
+.centered{
+    padding-top: 10%;
+    width: 30%;
+    position: absolute;
+    padding-top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+p{
+  
+    font-family: arial;
+    font-size: 25px;
+    line-height: 25pt;
+}
+.centered{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    
+
+}
+h3 {
+    width: 100px;
+    border-radius: 50%;
+    font-size: 20pt;
+    padding-bottom: 10%;
+  }
+  div.container2{
+  padding-left: 10%;
+
+  
+  
+  }
+
+div.box2-heading{
+padding-left: 40%;
+
+}
+img{
+    width: 50%;
+    height: 400px;
+    padding-top: 5%;
+    
+}
+/*.box1{
+    border: 1px solid rgba(255,255,255,.2);
+    height: 26em;
+   
+   
+    width: 80%;
+    padding-right: 15%;
+    outline: 1px solid #a6988b;
+    transition: 0.5s;
+}
+*/
+.box2{
+    border: 1px solid rgba(255,255,255,.2);
+    
+    width: 80%;
+    height: 520px ;
+    outline: 1px solid #a6988b;
+    transition: 0.5s;
+}
+h3{
+width: 100%;
+padding-right: 60%;
+padding-top: 5%;
+}
+
+.box2:hover{
+    outline-offset: 10px;
+}
+.typewrite{
+    color: bisque;
+    padding-left: 1em;
+    padding-top: 2%;
+    padding-bottom: 5%;
+  }
+.para.typewrite{
+    padding-bottom: 5%;
+}
